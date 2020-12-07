@@ -18,8 +18,6 @@ chrome.contextMenus.create(contextMenuItem);
 
 chrome.contextMenus.onClicked.addListener( function (info, tab) {
     chrome.tabs.executeScript(tab.id, {file: "content.js"});
-    copyTextToClipboard(tab.url);
-
 });
 
 chrome.runtime.onMessage.addListener(
