@@ -1,6 +1,12 @@
 chrome.runtime.sendMessage({greeting: "hello"}, function(response) {
   console.log(response.farewell);
   document.addEventListener("contextmenu", function(e) {
-    console.log(e);
+    let copyFrom = document.createElement("textarea");
+    copyFrom.textContent = window.location.href + "#" + e.target.id;
+    document.body.appendChild(copyFrom);
+    copyFrom.select();
+    document.execCommand('copy');
+    copyFrom.blur();
+    document.body.removeChild(copyFrom);
   })
 });
