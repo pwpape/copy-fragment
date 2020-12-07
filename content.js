@@ -7,3 +7,4 @@ document.addEventListener("contextmenu", function(e) {
   copyFrom.blur();
   document.body.removeChild(copyFrom);
 });
+
