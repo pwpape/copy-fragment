@@ -1,12 +1,11 @@
 {
-    "name": "App name",
+    "name": "Copy URL Fragment",
     "version": "1.0",
     "manifest_version": 2,
-    "description": "Your description",
+    "description": "This extension copies the url of the webpage and appends as a URL fragment the ID of the DOM element.",
     "permissions": [
       "contextMenus",
-      "activeTab",
-      "*://*/*"
+      "activeTab"
      ],
      "content_scripts": [{
       "matches": ["<all_urls>"],
