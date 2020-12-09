@@ -3,6 +3,12 @@
     "version": "1.0",
     "manifest_version": 2,
     "description": "This extension copies the url of the webpage and appends as a URL fragment the ID of the DOM element.",
+    "icons": {
+      "16": "images/paperclip_16.png",
+      "32": "images/paperclip_32.png",
+      "48": "images/paperclip_48.png",
+      "128": "images/paperclip_128.png"
+    },
     "permissions": [
       "contextMenus",
       "activeTab"
